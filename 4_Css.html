@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est optio inventore repellat eveniet tempore corrupti, adipisci error fugiat modi qui accusamus rem ipsa iure veritatis placeat. Tempora, eaque et!
+    </p>
+
+    <button id="b1">Add CSS</button>
+    <button id="b2">Remove CSS</button>
+    <button id="b3">Add/Remove CSS</button>
+
+    <script>
+        // $('selector').css("property","value");
+        //$('p').css("color","red");
+
+        $('#b1').click(function(){
+            $('p').css("color","blue");
+            $('p').css("background","pink");
+            $('p').css("height","auto");
+            $('p').css("font-size","30px");
+        })
+        $('#b2').click(function(){
+            $('p').css("color","");
+        })
+        $('#b3').click(function(){
+            $('p').css("color","blue");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .q,.a
+        {
+            background: lightblue;
+            border: 2px solid;
+        }
+        .a 
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="q">Quetion?</div>
+    <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis beatae, tempore est saepe obcaecati? Ex ea tempore omnis dolorum laboriosam! Mollitia dolor incidunt numquam aperiam totam quasi consectetur quibusdam!</div>
+
+    <script>
+        $('.q').click(function (){
+            $('.a').slideDown();
+        })
+        $('.q').click(function (){
+            $('.a').slideUp();
+        })
+        $('.q').click(function (){
+            $('.a').slideToggle();
+        })
+    </script>
+</body>
+</html>

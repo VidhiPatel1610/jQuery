@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+        <!--
+     jQuery: Javascript framework
+
+    Framework: write less do more
+
+    $('selector').method();
+
+    $("tagName")
+    $('#idName')
+    $(".className")
+
+    <h1 id="t" class="t">hello</h1>
+
+    document.getElementById('t')
+
+    document.QuerySelector('#t')
+
+    document.QuerySelector('.t')
+
+    $('#t')
+    $('.t')
+    $("h1") 
+
+-->
+
+    <h1 id="t" class="t">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda alias fugiat provident non recusandae delectus esse, aliquid voluptatum eveniet iste, laboriosam tempore aut officiis pariatur at, nam mollitia suscipit et.</h1>
+    <button id="b1">FadeOut</button>
+    <button class="b1">FadeIn</button>
+    <button class="b2">FadeToggle</button>
+    <button id="x">FadeTo</button>
+
+    <script>
+        console.log($('#t'));
+        console.log($('.t'));
+        console.log($('h1'));
+
+
+        $(document).ready(function (){
+            $('#b1').mouseover(function (){
+                $('#t').fadeOut(1000);
+            })
+
+            $('.b1').click(()=>{
+                $('#t').fadeIn(2000);
+            })
+
+            $('.b2').click(()=>{
+                $('.t').fadeToggle('fast');
+            })
+
+            $('#x').mouseenter(()=>{
+                $('h1').fadeTo('slow',0.2)
+            })
+        })
+    </script>
+</body>
+</html>

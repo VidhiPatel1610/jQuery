@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        button{
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+      <!--
+     jQuery: Javascript framework
+
+    Framework: write less do more
+    $('selector').method();
+
+        $("tagName")
+        $('#idName')
+        $(".className")
+
+      <h1 id="t" class="t">hello</h1>
+
+    document.getElementById('t')
+
+    document.QuerySelector('#t')
+
+    document.QuerySelector('.t')
+
+    $('#t')
+    $('.t')
+    $("h1") 
+
+-->
+
+
+<h1 class="ch1" id="ih1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nesciunt impedit ut. Aliquam itaque accusantium eligendi eos quaerat, voluptatem atque iure vel perspiciatis impedit deserunt repudiandae, placeat praesentium quas ducimus.
+</h1>
+
+<button id="b1">Hide</button>
+<button class="b2">Show</button>
+<button class="b3">Hide/Show</button>
+
+
+<script>
+    console.log($('#ih1'));
+    console.log($('.ih1'));
+    console.log($('h1'));
+
+
+    $(document).ready(function(){
+
+        $('#b1').mouseover(function(){
+            $('#ih1').hide(1000);
+        })
+
+        $('.b2').click(()=>{
+            $('#ih1').show(2000);
+        })
+
+        $('.b3').click(()=>{
+            $('#ih1').toggle();
+        })
+
+        //$('h1').click(()=>{
+        //    $('h1').hide();
+        //})
+
+        $('h1').click(function(){
+            $(this).hide();
+        })
+
+    })
+</script>
+</body>
+</html>
